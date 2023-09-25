@@ -35,7 +35,7 @@ export const NavItems = ({
           <>
             <BrainManagementButton />
             <Link aria-label="account" className="" href={"/user"}>
-              <MdPerson className="text-2xl" />
+              <MdPerson className="text-2xl text-green-400" />
             </Link>
           </>
         )}

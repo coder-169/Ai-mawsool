@@ -15,7 +15,7 @@ export const BrainManagementButton = (): JSX.Element => {
         aria-label="Settings"
         data-testid="brain-management-button"
       >
-        <FaBrain className="w-6 h-6" />
+        <FaBrain className="w-6 h-6 text-green-400" />
       </Button>
     </Link>
   );

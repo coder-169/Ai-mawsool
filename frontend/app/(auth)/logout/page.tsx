@@ -24,7 +24,7 @@ export default function Logout() {
             <h2 className="text-lg">{t("areYouSure",{ ns: "logout" })}</h2>
             <div className="flex gap-5 items-center justify-center">
               <Link href={"/"}>
-                <Button variant={"primary"}>{t("cancel",{ ns: "logout" })}</Button>
+                <Button variant={"success"}>{t("cancel",{ ns: "logout" })}</Button>
               </Link>
               <Button
                 isLoading={isPending}

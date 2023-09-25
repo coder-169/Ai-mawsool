@@ -30,10 +30,10 @@ export const PublicAccessConfirmationModal = ({
         }}
       />
       <div className="flex flex-row justify-between pt-10 px-10">
-        <Button type="button" onClick={onConfirm} variant="secondary">
+        <Button type="button" onClick={onConfirm} variant="success">
           {t("confirm_set_brain_status_to_public")}
         </Button>
-        <Button type="button" onClick={onCancel}>
+        <Button variant={'danger'} type="button" onClick={onCancel}>
           {t("cancel_set_brain_status_to_public")}
         </Button>
       </div>

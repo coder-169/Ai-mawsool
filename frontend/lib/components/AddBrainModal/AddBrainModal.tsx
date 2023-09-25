@@ -179,6 +179,7 @@ export const AddBrainModal = ({
 
           <Button
             isLoading={isPending}
+            variant={'success'}
             className="mt-12 self-end"
             type="submit"
             data-testid="create-brain-submit-button"

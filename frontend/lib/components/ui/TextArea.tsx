@@ -28,7 +28,7 @@ export const TextArea = forwardRef(
         )}
         <textarea
           ref={forwardedRef as RefObject<HTMLTextAreaElement>}
-          className="w-full bg-gray-50 dark:bg-gray-900 px-4 py-2 border rounded-md border-black/10 dark:border-white/25"
+          className="w-full bg-gray-50 dark:bg-gray-900 outline-none px-4 py-2 border rounded-md border-black/10 dark:border-white/25 focus:border-green-400"
           name={name}
           id={name}
           {...props}

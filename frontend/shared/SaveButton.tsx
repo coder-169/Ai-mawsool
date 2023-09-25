@@ -11,7 +11,7 @@ export const SaveButton = ({ handleSubmit, ...props }: Props): ReactElement => {
 
   return (
     <Button
-      variant={"primary"}
+      variant={"success"}
       onClick={() => void handleSubmit(true)}
       type="button"
       {...props}

@@ -64,7 +64,7 @@ export const BrainsList = (): JSX.Element => {
               >
                 <Button
                   type="button"
-                  className="bg-purple-600 text-white py-2 mb-2 flex flex-row flex-1"
+                  className="bg-green-600 text-white py-2 mb-2 flex flex-row flex-1"
                 >
                   {t("brain_library_button_label")}
                 </Button>

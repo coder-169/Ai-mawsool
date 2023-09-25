@@ -62,7 +62,7 @@ export const SettingsTab = ({ brainId }: SettingsTabProps): JSX.Element => {
             label={t("brainName", { ns: "brain" })}
             placeholder={t("brainNamePlaceholder", { ns: "brain" })}
             autoComplete="off"
-            className="flex-1"
+            className="flex-1 "
             required
             disabled={!hasEditRights}
             {...register("name")}
@@ -82,7 +82,7 @@ export const SettingsTab = ({ brainId }: SettingsTabProps): JSX.Element => {
               </div>
             ) : (
               <Button
-                variant={"secondary"}
+                variant={"success"}
                 isLoading={isSettingAsDefault}
                 onClick={() => void setAsDefaultBrainHandler()}
                 type="button"
