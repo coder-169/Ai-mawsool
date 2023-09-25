@@ -26,8 +26,8 @@ const Hero = (): JSX.Element => {
     return "sticky";
   });
 
-  const videoScaleSync = useTransform(scrollYProgress, [0, 0.5], [0.9, 1]);
-  const videoScale = useSpring(videoScaleSync, { mass: 0.1, stiffness: 100 });
+  // const videoScaleSync = useTransform(scrollYProgress, [0, 0.5], [0.9, 1]);
+  // const videoScale = useSpring(videoScaleSync, { mass: 0.1, stiffness: 100 });
 
   const opacitySync = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const opacity = useSpring(opacitySync, { mass: 0.1, stiffness: 200 });
@@ -51,14 +51,14 @@ const Hero = (): JSX.Element => {
           <Button variant={'success'}>{t("getStarted")}</Button>
         </Link>
       </motion.div>
-      <motion.video
+      {/* <motion.video
         style={{ scale: videoScale }}
         className="rounded-md max-w-screen-lg shadow-lg dark:shadow-white/25 border dark:border-white/25 w-full bg-white dark:bg-black"
         src="https://user-images.githubusercontent.com/19614572/239713902-a6463b73-76c7-4bc0-978d-70562dca71f5.mp4"
         autoPlay
         muted
         loop
-      />
+      /> */}
     </section>
   );
 };

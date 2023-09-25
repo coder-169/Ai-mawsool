@@ -65,7 +65,7 @@ export const PeopleTab = ({ brainId }: ShareBrainModalProps): JSX.Element => {
                   {t("shareBrainLink",{ns:"brain"})}
                 </span>
               </div>
-              <Button type="button">
+              <Button type="button" variant="success">
                 <MdContentPaste />
               </Button>
             </div>
@@ -94,6 +94,7 @@ export const PeopleTab = ({ brainId }: ShareBrainModalProps): JSX.Element => {
 
         <div className="mb-3 flex flex-row justify-end">
           <Button
+          variant="success"
             isLoading={sendingInvitation}
             disabled={roleAssignations.length === 0}
             type="submit"
